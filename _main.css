@@ -1,0 +1,139 @@
+body {
+    background: purple;
+    height: auto;
+}
+
+#MDUDBG { 
+  background: rgba(0, 0, 0, 0.7) url('Manga/My\ dress\ up\ darling/BackgroundPhoto.png');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+ }
+
+ #KSLIW { 
+  background: rgba(0, 0, 0, 0.7) url('https://miro.medium.com/max/7680/1*L022jgTDzUtBpe34fFGyYA.jpeg');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+ }
+
+ #EIS { 
+  background: rgba(0, 0, 0, 0.7) url('https://th.bing.com/th/id/OIP.RKJEfKMc7ZdYIP23B2I_iwHaEK?pid=ImgDet&rs=1');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+ }
+
+ #WFA { 
+  background: rgba(0, 0, 0, 0.7) url('https://theawesomeone.com/wp-content/uploads/2021/02/as3.jpg');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+ }
+
+ #KSCK { 
+  background: rgba(0, 0, 0, 0.7) url('https://th.bing.com/th/id/OIP.N5sWk9tWeR-t06SEmhHQxwHaEK?pid=ImgDet&rs=1');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+ }
+
+ #RAAS { 
+  background: rgba(0, 0, 0, 0.7) url('https://englishlightnovels.files.wordpress.com/2021/01/reincarnated_as_a_sword_vol2_insert1_cropped.jpg?w=1024');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+ }
+
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  margin-bottom: 10px;
+}
+
+.Navbarsettings {
+    background-image: radial-gradient(purple,rgb(31, 0, 42));
+    font-family: 'Courier New';
+}
+
+.navbgsize {
+    background-size: 100px;
+    background-position: center;
+}
+
+.loginsignup {
+    background-image: radial-gradient(purple,rgb(31, 0, 42));
+    font-family: 'Courier New';
+    width: 500px;
+    height: auto;
+    border-radius: 5%;
+}
+
+.Buttons {
+    background-color: rgb(31, 0, 42);
+    font-family: 'Courier New';
+}
+
+.Buttons:hover {
+  background-color: rgb(130, 41, 130);
+}
+
+.Tabs, .Tables {
+    background-color: rgb(17, 0, 17);
+    font-family: 'Courier New';
+}
+
+.MainMenu {
+    background-image: radial-gradient(purple,rgb(31, 0, 42));
+    font-family: 'Courier New';
+}
+
+.toc-wrapper {
+  position: relative;
+  margin-top: 42px;
+}
+
+.pin-top {
+  position: fixed !important;
+}
+
+.Title-Background {
+  background-image: radial-gradient(rgb(90, 0, 90),rgb(31, 0, 42));
+  font-family: 'Courier New';
+  border-radius: 10px;
+  text-align: center;
+  font-size: xx-large;
+}
+
+.Content-Background {
+  background-image: radial-gradient(purple,rgb(31, 0, 42));
+  font-family: 'Courier New';
+  border-radius: 10px;
+}
+
+.Tabs-Background {
+  background: rgb(31, 0, 42);
+  font-family: 'Courier New';
+}
+
+.Tabs-Content-Background {
+  background: rgb(57, 0, 57);
+  font-family: 'Courier New';
+}
+
+.Font {
+  font-family: 'Courier New';
+}

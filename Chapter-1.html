@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Scrollbar settings -->
+  <style>
+    html ::-webkit-scrollbar {
+      width: 1vw;
+    }
+
+    html ::-webkit-scrollbar-thumb {
+      background: radial-gradient(purple, rgb(31, 0, 42));
+    }
+
+    html ::-webkit-scrollbar-thumb:hover {
+      background: radial-gradient(rgb(164, 0, 164), rgb(58, 0, 79));
+    }
+
+    html ::-webkit-scrollbar-track {
+      background-color: rgb(40, 0, 53);
+    }
+
+    html ::-webkit-scrollbar-track:hover {
+      background-color: rgb(58, 0, 77);
+    }
+  </style>
+  <!-- End of Scrollbar settings -->
+  <!-- Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/277b7a838c.js" crossorigin="anonymous"></script>
+  <!-- Mangazine-CSS -->
+  <link rel="stylesheet" href="_main.css">
+
+  <title>Mangazine</title>
+</head>
+
+<body>
+
+  <!-- NavBar -->
+  <nav>
+    <div class="nav-wrapper Navbarsettings">
+      <a href="_main.html" class="brand-logo center">Mangazine<i class="fa-solid fa-book-open-reader right"></i></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="hide-on-med-and-down">
+        <div class="left">
+          <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a href="https://discord.com/"><i class="fa-brands fa-discord"></i></a></li>
+        </div>
+        <div class="right">
+          <li><a href="#LogIn" class="modal-trigger"><i class="fa-solid fa-right-to-bracket right"></i>Log-In</a></li>
+          <li><a href="#SignUp" class="modal-trigger"><i class="fa-solid fa-user-plus right"></i>Sign-Up</a></li>
+        </div>
+      </ul>
+    </div>
+  </nav>
+  <!-- End of NavBar -->
+  <!-- SideNav -->
+  <ul class="sidenav Navbarsettings " id="mobile-demo">
+    <li class="user">
+      <div class="user-view">
+        <div class="background">
+          <img src="">
+        </div>
+        <a href="#user"><img class="circle" src="User.png"></a>
+        <a href="#LogIn" class="modal-trigger"><span class="white-text name"><i
+              class="fa-solid fa-right-to-bracket right"></i>Log-In</span></a>
+        <a href="#SignUp" class="modal-trigger"><span class="white-text email"><i
+              class="fa-solid fa-user-plus right"></i>Sign-Up</span></a>
+      </div>
+    </li>
+    <div class="divider"></div>
+    <div>
+      <li><a href="_main.html" class="white-text center">Home</a></li>
+      <li><a href="_main.html#Recommended" class="white-text center">Recommended Manga</a></li>
+      <li><a href="_main.html#TopRated" class="white-text center">Top Rated Manga</a></li>
+      <li><a href="_main.html#Genre" class="white-text center">Genre</a></li>
+    </div>
+    <div class="divider"></div>
+    <div>
+      <li><a href="https://www.facebook.com/" class="white-text"><i
+            class="fa-brands fa-facebook white-text"></i>Facebook</a></li>
+      <li><a href="https://www.twitter.com/" class="white-text"><i
+            class="fa-brands fa-twitter white-text"></i>Twitter</a></li>
+      <li><a href="https://www.discord.com/" class="white-text"><i
+            class="fa-brands fa-discord white-text"></i>Discord</a></li>
+    </div>
+  </ul>
+  <!-- End of SideNav -->
+  <br><br><br>
+  <!-- Main -->
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m12 l9 white-text">
+        <div class="center Content-Background">
+          <h3>Chapter 1</h3>
+        </div>
+        <!-- Carousel -->
+        <div id="Home" class="section scrollspy">
+          <ul class="carousel carousel-slider">
+            <!-- 1 -->
+            <li class="carousel-item">
+              <img  
+                src="https://bn02pap001files.storage.live.com/y4miiKETvGc7JGDBZl6-KtRctDW38JQAmtULhRohs3ECOsnOYTxn1G9PyWhpnFSRIPboflfkol8ROZ6Jy8F6dWm8SbibsPoDhYG7Vy1H0FLz33xcCfOVnFNSGa-JT4oi2ZPGpgycg9JD0M1Dge3aWjy8AX8uGSQrDfwCmITcCTLJVJyF4DtJc-KODukafFNRvT2?width=907&height=1280&cropmode=none">
+              </li>
+              <!-- 2 -->
+            <li class="carousel-item">
+              <img src="https://bn02pap001files.storage.live.com/y4mA_w7R1hO12TFxQDLNew7I1H2KVlZJqDGng35nAVty0MTA5Z-enfzRa2hXgR0x0Tl1dax-b7NCNKzwRzTTT-ETnAhc8o4bQwjzO-HWDXEDLMSRh2w1CarqmHUoYNeMXNfOO-1LbuTYhkqb7LBEezk2AmnUKd28OwCw6npEl5UsEwzj3VBcxvqeVR4WgSbmoMB?width=1814&height=1280&cropmode=none">
+            </li>
+            <!-- 3 -->
+            <li class="carousel-item">
+              <img src="https://bn02pap001files.storage.live.com/y4m-Z6vDRIex7GLHFmnhikDm7EWl3hCpIbbQtfpZHqpGSZsWxBDaUEqz9Vyxlg9fL-suJ-bHnTYlEV4kuQ9JNc2z9nAEI_a3ZsYWkAOWffnKPiEv_E8_qfYxdua0ttTyoA-oKMFr8TQFg-8NK7zUcJQtnMWMgd91ZzBNX0QCKxmc3iKXqz4F8KC63MePYyipkGy?width=907&height=1280&cropmode=none">
+            </li>
+            <!-- 4 -->
+            <li class="carousel-item">
+              <img src="https://bn02pap001files.storage.live.com/y4miolDTQCdm0c4K7Hi2KPdSbRMYpLTJIKYqLqRv-ZBHV2kIo3J9TsHUEkG0YPVI0KC_XJLHnbexj1QJKdTulCeQ-3s9EPcJf4XwIiXdsxC7LE9mVlKP_W1KVeP1hNnm--217tSvar6W7spMrxowmVqcWrRDBPqVgdIKDIavaKZLuBGlGdEytA9OSj0aMuqq3ht?width=907&height=1280&cropmode=none">
+            </li>
+            <!-- 5 -->
+            <li class="carousel-item">
+              <img src="https://bn02pap001files.storage.live.com/y4mv27_S1pqTgH8LPUmsXw7k5j8e3YpDVSociJCsBXkapUa5ZP36VBzbNYpiL-GNQcY5BE1LhkvVL5gm_fxZ1glU2dM61knFMzT4Tk9-SXJd_26UfYnkJF1rCjz_MZEyjr7Igp_C1vYOpb0lInUuGqvY44FAv1-7frlbTIynM3KVIKMi-qCon_Jqbit8xYZSZNT?width=907&height=1280&cropmode=none">
+            </li>
+            <!-- 6 -->
+            <li class="carousel-item">
+              <img src="https://bn02pap001files.storage.live.com/y4mLpGtUcuiwAw5BljGzhT85lickfj6EYFqw2O3RoxWmODpuLwuyCgcWdwb1yi-fM9fumFGsShW4SR77bhV31QGiAAU_b03ESQiTW5ET7y_X6TNIKmhJqdtpGyICKF6hDxGuekUUCF5K0wnW3_GRpvTRSgoUCIiKQWrqLZVPDvzPM_rF_sfzhmlBARxIaa5nrng?width=907&height=1280&cropmode=none">
+            </li>
+            <!-- 7 -->
+            <li class="carousel-item">
+              <img src="https://bn02pap001files.storage.live.com/y4mbeFF2XLuxJeO8LY4sF-pLyv9maTQO8AZejYtgej9RmLzfHihQnIiTpP7WvLbt3JQIQiTwBFBqfdwD8S_vQplWglzFUfh5a4ul9f-R4awpHbx9pLd9ZEOewcvf_bj3q6Pfe9X2LKllQV4Vf9SVR4Jhw0mzPducu17g0iOlQu5XkM6QTnMOL9IHnSqia8iAgGy?width=907&height=1280&cropmode=none">
+            </li>
+            <!-- 8 -->
+            <li class="carousel-item">
+              <img src="https://bn02pap001files.storage.live.com/y4mu5dY6f61cxpxqJLHercYCZB9QD6F5mJGdB1Ti44c4bjJHA4L1Z1ul2JK-gFyxbqia2WMc1Y3KMsD_SpdM4kSa6WcIjoYXMbkeN2BHu2tPF-Rz-eUpGH4vjJcOrNYrqlvTT3XPKNoa7mKpzvrsMrNMwv4O0Jy6R6aHMPwEGtvHzIMmgkR4qIwNNJQ9Ulzelrp?width=907&height=1280&cropmode=none">
+            </li>
+            <!-- 9 -->
+            <li class="carousel-item">
+              <img src="https://bn02pap001files.storage.live.com/y4m2K9W7O7MxyRgKDbVBGJyDbWaUbK7qZeL-LEGQ-XMxJkta-WwzU36rcEmA7o5FVSrzuqXRJe6utFErnveaNEx9kASlxu9k-g8abSmZnUYEDxSbKUntOdmkke2UnLC-VYzJr9nvhNIE-vtn9B_SQBMYSHynm4WAMH7-pIXByzCgqVo66xokdDywRKAu575PvwX?width=907&height=1280&cropmode=none">
+            </li>
+            <!-- 10 -->
+            <li class="carousel-item">
+              <img src="https://bn02pap001files.storage.live.com/y4mRRmyG-aLo27tMACTwzUmLtgCFnFOqtl4s9WFjCTN88FyvnNyAvLwpTyBOQy9lSeHvlpTOxfUUPP1VNBOaY3Qdpdr3rfUy9hqqjU7itGU335IYlpnxr7wJ7nFwW7r_XwZGTT0zGjItVSuObKrHr70rdVV-iwUvZyailfcUoNwzFaoJ67ojJ4b6M36XbgKEHct?width=907&height=1280&cropmode=none">
+            </li>
+            <!-- 11 -->
+            <li class="carousel-item">
+              <img src="https://bn02pap001files.storage.live.com/y4mFslGNebh0TWb4fkun6irkzwi5NsepP2N4ac4YnU13p3stlRGREaF5_P_ZCngSErHKKm31EZSSkUJrStR1j_deIQg5labKC8P5KYL3KXn75QKh6KbqdqWSdix1I5iyppk-08VszTV1IbXej1Y-NCUGvfY5e9gziN5aDmWOuF0pr_-xRlC0nuDzvQcduSCgvCl?width=907&height=1280&cropmode=none">
+            </li>
+            <!-- 12 -->
+            <li class="carousel-item">
+              <img src="https://bn02pap001files.storage.live.com/y4mQR5rQVLC65cLOxKaTzzYMyGNZJrmFeraJx9hC9gjPEXbPMGIWENjLfIWCYx1nEwr_4WF39_4nIJsJEaCHCXxJ3as4wwWOJYXMVP_GhyuGqGpKiK_R1Ky7JS6qY9ZF2-lUhHhkMjzT4xJ4Gv8AGse-WEhIzPhiROt8TkKaBfrEz7vN30nnC2OmgHRcVXXUPan?width=907&height=1280&cropmode=none">
+            </li>
+            <!-- 13 -->
+            <li class="carousel-item">
+              <img src="https://bn02pap001files.storage.live.com/y4m_BSXcN8C-fHSLSw2pdcvXe4QfbEOV5BdEL95A2iyHLueZA0qFwDSEUTxBkVDJAm6IXGCoae5yPUx-I66uy0I3ltZbI4yo-J4pBDWVyJmKqLlAzfIhOYbioeLRVL74zzOi6nSOiDqJ2OIGD1RUg2tmwAUClj3MzFhl2l5aeMoM84E0-OJbRPTMW8pygguzT-0?width=907&height=1280&cropmode=none">
+            </li>
+            <!-- 14 -->
+            <li class="carousel-item">
+              <img src="https://bn02pap001files.storage.live.com/y4mlEo2-JHFYGOEQBr02huLw-JHt1PMe3ko-rRiKi4CUm82idHEtgbqo3ceVdafpQ56H--K5m25zojmdyNfEgo_P_HxhDS8gy8EOEIabLatsEknezR0b7UGgePK3ZIig-eaqhvqCHVbeBgMkc0nd_Ly3kEnPVcdI5ZaAmZPo9XFlSzdXOxn--3rtFJ_kQj6vd4q?width=907&height=1280&cropmode=none">
+            </li>
+            <!-- 15 -->
+            <li class="carousel-item">
+              <img src="https://bn02pap001files.storage.live.com/y4mpJZCUQJlxoD0_o0ckEpELUOwaLregYOK7i6sIDaOY0BhCsROXun1BfuH2qYNVphuUHSBUBmhWDwhCaQEzX0nP01gflOPi0khx3r2GYBG9UV5ZzpIHdJH5xRurT6sK50hbExEZGBHyWWzQbvURwmDc0ltiXuXvaQ6RVQVq0e3mBlx2Xl2Gime4iA61PWfpoxA?width=907&height=1280&cropmode=none">
+            </li>
+            <!-- 16 -->
+            <li class="carousel-item">
+              <img src="https://bn02pap001files.storage.live.com/y4mt1RGycabn3-A0BYVDbBdF_v8nizJDyk_QIDZkcaPC3CuhAF4hSvEbfaMgZ3yhyPnakq4d6zyGgQukSF2OGK2WCLftbJLtXT1Ja2lypqRwvg8MGmyucGDXFzmaHBVGhTKHexR6jIw7yJBl3jrXYGh0paovGyk7aFlJ3XF3QeaA8_WEv_mouLYGOIb2EcaMijc?width=907&height=1280&cropmode=none">
+            </li>
+            <!-- 17 -->
+            <li class="carousel-item">
+              <img src="https://bn02pap001files.storage.live.com/y4mBNYLuw03QsA7vooOH46Qi0SJm6ynpsp1jX9w5BWVj8w82mPTtr01xhO3H-lKE_GWBuNcTVI_Yl7-KhBbp-rzcbbJH_SOiddj9Hn6lpemB-CnEYbi_6XvTsaAuCN6By-WnG-XGLsVMWGgB6fUW1XoUKyaGBGamnOZZ0Z5R5GvUZPk-jiRvxSJtAJncQztX5Vw?width=907&height=1280&cropmode=none">
+            </li>
+            <!-- 18 -->
+            <li class="carousel-item">
+              <img src="https://bn02pap001files.storage.live.com/y4mThG1S799LZr_HsbxDITxXB6n_anvIXSn1oO8a-7DGaQEK49bz1KcQ6Udm7kyB4z7gOgLRnr3Q88mf5uOGNUMpTxU4dsQsiAMQRgQ52CVaeTUNe8XLfWMao0knz3nUrxvHAzAy0LZCXGvS9NmCb4n5ArYKxdPUVwlgWJBWk2jKjL2M4Ht2TaLvtrLkiDnJkIz?width=907&height=1280&cropmode=none">
+            </li>
+            <!-- 19 -->
+            <li class="carousel-item">
+              <img src="https://bn02pap001files.storage.live.com/y4maZ-XTzh7ooS6kjXwia6PEjwTvbF_ItvC1diG9UhkA3VqUcdt4qyvWhkuckhWt5K_J4i-BeS_F7urX3xeLR9l33opGmQftvFTt0NK6QDi90JAHlVSigRBwjkwzDqPAN1YLmTOjy0TLltk6PrLEza9ShSUGI5ystTOs2yt1yiqeUEXLBNAkwto-EdrmLpWveNy?width=907&height=1280&cropmode=none">
+            </li>
+            <!-- 20 -->
+            <li class="carousel-item">
+              <img src="https://bn02pap001files.storage.live.com/y4mbYn-ie31sglP_ApyBYwroTcrLEf2A2f_YQHGOlhARrQc-LqXA3FbGmijHNx8Osz7juPQBoULHzhPupxDK4WBfFRMY7z3Kf9iPNiFfhDIJdu5lf-fd2_KJYipDYySXCcSgRP6MQYxCGAn1eerdkoE_YdCru-yrGdJ0FNb-R70kRxyuRJZT5Yl3RE9hctwQ8pr?width=907&height=1280&cropmode=none">
+            </li>
+            <!-- 21 -->
+            <li class="carousel-item">
+              <img src="https://bn02pap001files.storage.live.com/y4mB3JC82jk6GBLKSS7-AZj9Frk1HBdPZ-xssL_SI2Cb_KL90jIWfVlMT7mZjc5hI8Kj24PJBA1JWuV8sp8KgIsNgNPDCsQSTj0vNlG6-78qOVccn4g2EYK0MdjoAhiL1UJBZxethNyfpol2WKnw5z1QGwoK2_4mdlfMxUCyZy2AwlhQEedgnWqhwRCcchZoodV?width=907&height=1280&cropmode=none">
+            </li>
+            <!-- 22 -->
+            <li class="carousel-item">
+              <img src="https://bn02pap001files.storage.live.com/y4mDehKc9qmvjsjUDfBKv7Mear-U5UdAcP69cZ5CFGO53v65LAan-UUU2Z7jCnhf-YzoEa3_xJt0pykwhO_qahRD_3O5Lk7mirUtziYO2kxil0k8DSgoEprXQeuQrsuOk1t1NN2o3lYVJ1dY-sgc6dWBxcHEVUPnc8GtWwxHc3cgEhJAZmSnVspBCV3uCfO2rsc?width=907&height=1280&cropmode=none">
+            </li>
+            <!-- 23 -->
+            <li class="carousel-item">
+              <img src="https://bn02pap001files.storage.live.com/y4mjGOhuheEMnm3ulOd3oznO5zA7u0v6ZjYwvWium1U_30_xppDBQLliwJsFvpC2g-xPufWTRJ-f3wMWYcmMoOynzBKCbTz73e72HFzPmBZ4XZKdO-Y6mhUxH9GaWxzByaZggeii0REUGQ1Ghnf8YL1z2an4kENywymP_I9U_98KHbJEJ4ix7svJktdMPmfsVnm?width=907&height=1280&cropmode=none">
+            </li>
+            <!-- 24 -->
+            <li class="carousel-item">
+              <img src="https://bn02pap001files.storage.live.com/y4mfgwmbfsat_-CZpjjZP3YvT3j7FSDOLECGWmZ3Z0wPsrYf-Tgzfyh1x_0bWP6cCC2bd4diU6FGrr1oxCUWTsNuzWd-CU7kcvR_oBLxOb6IPdEr4HMDD83j1M6p_qGA7QFc6YDuQ0jugYgXa-gw4RNASdIn_wsEZ42OAxpr7Rs1M-inAgk7h-xDbPWjBKH2x1k?width=907&height=1280&cropmode=none">
+            </li>
+            <!-- 25 -->
+            <li class="carousel-item">
+              <img src="https://bn02pap001files.storage.live.com/y4m84FV9a7P__cBfBNdT1TFZ5joCwBJzpLrHwOQBq3Py9Zt9L8ASsjbUErEwhYE8FWX81Axhy6hlKWr8Mwx6aTu5ii5fnAwPVq1dbGU3KyRr5QeMvEUCi2NUNCD26c3UItYCkDm-b-j8oyeKCxHOudVPqyCH01JyYLuYEE20rLsHSUhy7wpZqUX0yy9yxFHxrId?width=906&height=1280&cropmode=none">
+            </li>
+            <!-- 26 -->
+            <li class="carousel-item">
+              <img src="https://bn02pap001files.storage.live.com/y4mA33j0nVY8qHnaBxIIlxPjPUICsGE8Vqpp8szK1JT3LZHiaVSvG4mRCb-rPiiA2e5YHjoYFEp2GgDshxd9c9zWR0av5y_ZYiZOqVlGpKyfAJNhUz8frP3mdbP2UQ3NZ1IuUWWIMF5xU84dZkz1r5psh0vgSyCU2cnTNIVURX7-ZW6UMyH5210uY6fNQ80bOxa?width=907&height=1280&cropmode=none">
+            </li>
+            <!-- 27 -->
+            <li class="carousel-item">
+              <img src="https://bn02pap001files.storage.live.com/y4muDvAmvRAZ_Vm8M1-DxKsq7ypD8LF3Jbn9OLdulV01_TXPmMqqVeYfbQ2BAgL4PkbDSaeGs4D_3AZRiGH2p3J9axrO2KUqFeC6ENTTz8_B389up83qudiK8C8hF3bymPxzgUOidJdXiDOvsKGLZ5BxIopSQd0jht0BVVOSdxq6quEcV0NbmNZK7CkBWUsKEf6?width=907&height=1280&cropmode=none">
+            </li>
+            <!-- 28 -->
+            <li class="carousel-item">
+              <img src="https://bn02pap001files.storage.live.com/y4mjt2BZ_bQQyG68kEnPh57lKWJIGJsFvspe-kKgs9c3Lj6KLrNVJIoeQ1sA2x8Kbn-YJS-ynsyuohZ0UqAo-0Ijk8EMsjZ-TXuXPHUoireMGjxb0-HOQ2fYI6vE5YbiHq1LXys2lfWvVOi7zs4uPWIFebKvTZgdCdmGVucXPqzCk4zPuKYHCbtkLb207UP40IJ?width=907&height=1280&cropmode=none">
+            </li>
+            <!-- 29 -->
+            <li class="carousel-item">
+              <img src="https://bn02pap001files.storage.live.com/y4miXwAddGWGD9pyw2wcBxjFw-VkPTjYXJXyO8Nd6fFNZY7ovP1uJeIULuBaU_VUbe98VEY6GAdyK-YB55RYfE_0kfqfDJ5XwDrJvN0HIUV1hqWpNIa2yrbWFl6G7GvUm8K1_veYYK8hsWK4ySvvrDjriq3uaJjsJ3SbDrFZ0RuCXeppoBCbMoAOZ2y9AFKxX-b?width=907&height=1280&cropmode=none">
+            </li>
+            <!-- 30 -->
+            <li class="carousel-item">
+              <img src="https://bn02pap001files.storage.live.com/y4mDx-HbVJcYchdbSZIId0DJ0cuSzyizWbDJ4LTRuzewATK6-Pq1-M4SJVwyiu6JVDwIPn_hAcxD2WkbNfRpxUEq7MuRmCuK4utFapYSQMD6CkeJ70CurU7jfwLIvLIYiipL0Ke4u8GD6jk4Nb1Q_O6zCS2IGDEpCKaO3z4e6u7UJ1P4wTfh1jk1N05p2jXezR8?width=907&height=1280&cropmode=none">
+            </li>
+            <!-- 31 -->
+            <li class="carousel-item">
+              <img src="https://bn02pap001files.storage.live.com/y4mFjLdtcxOU5hdj3wtAg8pLcYBoZWJUFTRQCDc7XHEOhoF2AWv7NQEQuxLvhuqYBitai067ZmxZqjKw-2xv-yuRLtz1WZgO4yCsJhBXhjjIt20dSDvo9eLywLEcVVC5DmfgBCLltetXj_VmU8jgVP71wdFejZ_xWus75QSWj9HLsJdWqOWQckaWLA8Qnkzfqfh?width=907&height=1280&cropmode=none">
+            </li>
+            <!-- 32 -->
+            <li class="carousel-item">
+              <img src="https://bn02pap001files.storage.live.com/y4mKOgSHj61Ck9ogjpAxBj0vzM-hgiSXAYBZz2nh-YQzQiOrXi2PSq_x3t22DL0eJ5BlOQa9ailIa14vgIzjn0JmMkvyji72TbNCzpcDAGPt34YYTJCPvQwdRppJZgk1kQsXUdF3t1Qf54IIl8neUl_u2HfOaw791fPgrZli_WAb7uJQUs2ApW5lZiN4svqghRV?width=907&height=1280&cropmode=none">
+            </li>
+            <!-- 33 -->
+            <li class="carousel-item">
+              <img src="https://bn02pap001files.storage.live.com/y4mU6kgc93CdeskSylsG313OsrHliX9mOMrYX8SajVwlWPm-ZLy1IOHuBYfDoV-fFg9kYthNAIC5XUJa-QstAJCsFRJTZ4hSEnREgvzzxzRcdpK1QaUAvPqbXcFOJWouRmKvV1OBMKJiNWu0ykc4zdD2Apqd9T3ReOH-Aof1mhswYfqBIu35zr_fHROxcrAOb2v?width=907&height=1280&cropmode=none">
+            </li>
+            <!-- 34 -->
+            <li class="carousel-item">
+              <img src="https://bn02pap001files.storage.live.com/y4m9qYOuAr1pSO6bEIq43m1PpOdLXZoEK-PHhgXuYNnbDEvXj-1zAAVOoHESIM4RwoaZfydwMD0hzdSh4N9Dy1QnlkjHo0jO9VSlYKCw8ED0G7GKLKvSfnx3Dmqf4kSoFL-vIqC0xaQBWIgdSsP1TOP1b2pnFCHjdJ7we-hUDtQl54YhaPUJtAEftQQXfE-TIMT?width=907&height=1280&cropmode=none">
+            </li>
+            <!-- 35 -->
+            <li class="carousel-item">
+              <img src="https://bn02pap001files.storage.live.com/y4mpldHzJmlgTSmSXdVkvrgUeS4lnKcPDEiTzpkvZEKQEnHgcHzBJvuZgYgkXyqBKN3BNXdnvRDiho9F09Hv2AKHQs4pZ4JmRCNb6rkC_ELYfKYo7TIPgKy5Wg-olJhsvPfM6XzKlIQOG2Itddwv4vKxBYnHbFm9iFpcm8g3pq4iI9iJuU6QF7vYA6q1-RFh4ea?width=907&height=1280&cropmode=none">
+            </li>
+            <!-- 36 -->
+            <li class="carousel-item">
+              <img src="https://bn02pap001files.storage.live.com/y4mBeZBJ4B8fcebY0XAzeZbhWfBfrpe8bH9IxWicO636HeoPJl-ZOwg2ISV46RorL9pSdeapfvzz-1Vb5UKXpMhPtDOvp_jhf-zbZSJiXsc4EQLyTvEyGlcDScQXWNUIvnKuxZt-Zn8n98nkCWZfeu2HWXoe6l7g_AEhlSSt1fHB5GUUzDQi4Vs8XF-In6lgw9q?width=907&height=1280&cropmode=none">
+            </li>
+            <!-- 37 -->
+            <li class="carousel-item">
+              <img src="https://bn02pap001files.storage.live.com/y4moXApQqG69MYnqitaUSCWIFVmk_Q20ZaqOyUJaXT_5xNtWhRd5MTze-6QgyQ8YjXY6uDqmCTEG6ej-zp_JL8gaoLeUZMuKxrLmfVsa-Tqg9fr9N0Aw49rv7abKFveJqbN9-TNEK00Sqp8Pee7dW6OH-tU_pBDvYQD_xOhKogGRtvEBWWuXMLxy3coC3midJgz?width=907&height=1280&cropmode=none">
+            </li>
+            <!-- 38 -->
+            <li class="carousel-item">
+              <img src="https://bn02pap001files.storage.live.com/y4mQVCKWWkS-BIMeisOdx_lOih0C7ZkYlLQsrBJO1gTqtQMuZlKDXZelXrVBdNjB9TuKa65tmFW7I7WjrHQ8b63vbXSuZUFWh-0u0y9J8pgj1YRMoVpqA9hGo-O6BjoS4xoKOPHBhCO4-8y8FBErlTxCWlSXbgAip7miADVOYkJZvdFqruoh4R5C_VF1Se9ll6L?width=907&height=1280&cropmode=none">
+            </li>
+            <!-- 39 -->
+            <li class="carousel-item">
+              <img src="https://bn02pap001files.storage.live.com/y4mc8FvJRQKWMSl-wI_8QGgdW7Olfotppj8swXw4yCU_eThmLnzPckDacW5-CQhuGQqAQwgt9CeXZlxJAOgY8c3C4GcaVFSW2-kcu_IhLPEeVEbQexmhitF3_SHtacv6KK_7-uRFmv6bhhuJV0JyzAkEL46OzsDITTyhtF7YY0Uj3_sRh-FzIpQ53N5nwM2tc4f?width=1814&height=1280&cropmode=none">
+            </li>
+            <!-- 40 -->
+            <li class="carousel-item">
+              <img src="https://bn02pap001files.storage.live.com/y4mTzvwJJKOLC5IxfYbu2a4GxagepZsW-NPghibhbSEPPcP1X6-rs0FmpxZbxAltAqO9TL7gA0T0WfBQMy72YKcpKbWjyDNbWaVqeu0xaplcX_nia-RJrRfloTYvJoqJ0CP2f7qPDnC0a9stOMjj4qV2lktXfNeA4X527AFv9JqkSHNq7C2WS2GDgCaCeP8uVTR?width=907&height=1280&cropmode=none">
+            </li>
+            <!-- 41 -->
+            <li class="carousel-item">
+              <img src="https://bn02pap001files.storage.live.com/y4mk3u0XXJLItaDlM0wY1ALgXg-x8rqGMZKSTNeGcT_6z75to7-XFAKcRboscqXvGQlldVA7WxOI_AQpmz8G41x6VOmDq-Kv5AsD3SGg96ETKNZo-S9fkfrZzzBlxHilCkwS7gaNR_8DHMzN5OLbHk0Lmzj6pvv2XM8Yc4UXLtnSwKcujkzavcvncWi1L-OyYtX?width=907&height=1280&cropmode=none">
+            </li>
+            <!-- 42 -->
+            <li class="carousel-item">
+              <img src="https://bn02pap001files.storage.live.com/y4mjEmXwgnmOSk_UggkY4GNh4FTXZvYcUCD8-OpOBxeEbn_VirmIwGOi6B-RpGvdNAS9XxWuukCc6rCf3hkZRRcqMKjfW81EEpt9nDijteaFDKabZ1cjRIK8_-VKHaZpMHrYH1zT8qForqoz617FV9e1TyjKwM6VBZ2GJMwhKhKeAyA-Yzj5a_WUFI_bPITvMqB?width=1814&height=1280&cropmode=none">
+            </li>
+            <!-- 43 -->
+            <li class="carousel-item">
+              <img src="https://bn02pap001files.storage.live.com/y4m91Hupi9BANKEHcGFpMsn6iVzwdc5cm-ec5qSJyfPy79D-WsoNuTHOcId0NMuhSZuYRsKwBPQ7J64BfJp2poW-D1zBiG3FKxVvfWxAH9QaK9shzWu4S8ypTFyTJ_sEaIGyksXSzbIOcmSwlexkNjN8GzXbckEJoCyFud40s1W2nU9fmv86QMSWuvd5IYaQs7l?width=907&height=1280&cropmode=none">
+            </li>
+            <!-- 44 -->
+            <li class="carousel-item">
+              <img src="https://bn02pap001files.storage.live.com/y4m2auZZmFgq2WT7V81pva5w1vm9SDrtFZzQf7wNFlzPDh-jIPN4DkHPBpDnLHShZszfPZFtnON52NlWbRdTfpKYhQc2FSkjPKmOLJt58z1uzx__J6Vo1dXbURKFZdBTHfBPmcVtsasOpfvo-1i78xgx4v31Om3cEBs3xfqnxetMoGgEFrpDsvMobKtsBbAIrDP?width=907&height=1280&cropmode=none">
+            </li>
+            <!-- 45 -->
+            <li class="carousel-item">
+              <img src="https://bn02pap001files.storage.live.com/y4mqpGBB1bcWT6zLAC8rPzc50sZkbuR707GvUeSQanxR--P_0gS7YA_Y4eqcAmvvWxxYIkYgmkElVXQM9UvFojTygrXVTly_c6n9dCOdWPu3KnobSQ5QPOTVZY-SaYJ57Fib3SF1aLQCD6CnD_2y7w7KziWl4ZWcoAJmkmWJhTcmQsqrspVbytsxT21DURwOI-p?width=1814&height=1280&cropmode=none">
+            </li>
+            <!-- 46 -->
+            <li class="carousel-item">
+              <img src="https://bn02pap001files.storage.live.com/y4mL9bDhxE0nKBx-8S_2IeyBm3sn3GtQhdVp3e-LGu63OWfsbKjkZd3LmTADHTGlWkFevGrdrEekPtv0uuIA-iekKnD7MFekKo8QToBFKDHwBBlIlsaU1WE5meqQx31A_U8RqYvpAcjOcPg2gQ6RE5tLAp4GaMaMileohi-6lPDweQUt-eOse-MCObkPsy8gicW?width=907&height=1280&cropmode=none">
+            </li>
+            <!-- 47 -->
+            <li class="carousel-item">
+              <img src="https://bn02pap001files.storage.live.com/y4m2NN6FO-dMHZAXWrQ_yrspQkVuhAc3mfrT5g74VE4YOvPtG1Zd9O8cNs5MiFktIdtOTZ5rhthH-NWuM-qcRAFi-bgV_6gkB6wXAn3NGHJq_tV5joupBO9FpLR54icydqo3uBK3IFg39bh_o9bPwn3mqGPLF3beO6ufMWHh77lyTx0tH_GB4AmIJy2BRrMWxGw?width=1114&height=1109&cropmode=none">
+            </li>
+          </ul>
+        </div>
+        <!-- End of Carousel -->
+        <div class="right Font">
+          <a href="Chapter-2.html">Next Chapter ---></a>
+        </div>
+      </div>
+      <!-- Table of contents -->
+      <div class="col hide-on-med-and-down l3">
+        <div class="toc-wrapper pin-top Font" style="top: 0px;">
+          <br><br>
+          <!-- Genre -->
+          <div class="row">
+            <!-- Title: Recommended Manga -->
+            <div class="col s11 offset-s1 Title-Background white-text">
+              Genre
+            </div>
+            <div class="col s12">
+              <br>
+            </div>
+            <!-- End of Title -->
+            <div class="col s11 offset-s1 Content-Background">
+              <div class="container">
+                <ul class="row">
+                  <li><a href="" class="white-text">Action</a></li>
+                  <li><a href="" class="white-text">Adventure</a></li>
+                  <li><a href="" class="white-text">Comedy</a></li>
+                  <li><a href="" class="white-text">Drama</a></li>
+                  <li><a href="" class="white-text">Horror</a></li>
+                  <li><a href="" class="white-text">Mystery</a></li>
+                  <li><a href="" class="white-text">Romance</a></li>
+                  <li><a href="" class="white-text">Fantasy</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <ul class="section table-of-contents">
+            <li><a href="_main.html#Home" class="white-text">Home</a></li>
+            <li><a href="_main.html#Recommended" class="white-text">Recommended </a></li>
+            <li><a href="_main.html#TopRated" class="white-text">Top Rated</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Modals -->
+  <div id="LogIn" class="modal loginsignup">
+    <div class="modal-content white-text">
+      <h4 class="center">Log-In</h4>
+      <form>
+        <div class="row">
+          <div class="input-field col s10  offset-s1">
+            <input id="E-mail" type="email" class="validate white-text">
+            <label for="first_name" class="req">E-mail</label>
+          </div>
+          <div class="input-field col s10 offset-s1">
+            <input id="Password" type="password" class="validate white-text">
+            <label for="last_name" class="req">Password</label>
+          </div>
+          <div class="col offset-s3">
+            <a class="waves-effect waves-purple btn center Buttons">Log-in</a>
+          </div>
+          <div class="col">
+            <a href="#SignUp" class="waves-effect waves-purple btn center Buttons modal-trigger modal-close">Sign-up</a>
+          </div>
+          <div class="col offset-s3 section">
+            <p>or you can log in with:</p>
+          </div>
+          <div class="col offset-s3">
+            <a href="https://www.google.com/"><i class="fa-brands fa-google medium white-text"></i></a>
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook medium white-text"></i></a>
+            <a href="https://twitter.com/"><i class="fa-brands fa-twitter medium white-text"></i></a>
+          </div>
+        </div>
+      </form>
+
+    </div>
+  </div>
+  <div id="SignUp" class="modal loginsignup">
+    <div class="modal-content white-text">
+      <h4 class="center">Sign-Up</h4>
+      <div class="row">
+        <div class="input-field col s5 offset-s1">
+          <input id="first_name" type="text" class="validate white-text">
+          <label for="first_name" class="req">first name</label>
+        </div>
+        <div class="input-field col s5">
+          <input id="last_name" type="text" class="validate white-text">
+          <label for="last_name" class="req">last name</label>
+        </div>
+        <div class="input-field col s10  offset-s1">
+          <input id="E-mail" type="email" class="validate white-text">
+          <label for="first_name" class="req">E-mail</label>
+        </div>
+        <div class="input-field col s10  offset-s1">
+          <input id="Password" type="password" class="validate white-text">
+          <label for="first_name" class="req">Password</label>
+        </div>
+        <div class="input-field col s10  offset-s1">
+          <input id="Password" type="password" class="validate white-text">
+          <label for="first_name" class="req">Confirm Password</label>
+        </div>
+        <div class="col offset-s3">
+          <a href="#LogIn" class="waves-effect waves-purple btn center Buttons modal-trigger modal-close">Log-in</a>
+        </div>
+        <div class="col">
+          <a class="waves-effect waves-purple btn center Buttons">Sign-up</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Jquery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      //sidenav
+      $('.sidenav').sidenav({
+        edge: 'right'
+      });
+      //Sticky-nav
+      $('nav').addClass('sticky-nav');
+      //Modal
+      $('.modal').modal({
+        opacity: 0.8
+      });
+      //Carousel
+      $('.carousel').carousel({
+        fullWidth: true,
+        noWrap: true
+      });
+      //Scrollspy
+      $('.scrollspy').scrollSpy();
+
+    });
+
+  </script>
+  <script src="_main.js"></script>
+</body>
+
+</html>

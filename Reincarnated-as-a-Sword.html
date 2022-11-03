@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Scrollbar settings -->
+  <style>
+    html ::-webkit-scrollbar {
+      width: 1vw;
+    }
+
+    html ::-webkit-scrollbar-thumb {
+      background: radial-gradient(purple, rgb(31, 0, 42));
+    }
+
+    html ::-webkit-scrollbar-thumb:hover {
+      background: radial-gradient(rgb(164, 0, 164), rgb(58, 0, 79));
+    }
+
+    html ::-webkit-scrollbar-track {
+      background-color: rgb(40, 0, 53);
+    }
+
+    html ::-webkit-scrollbar-track:hover {
+      background-color: rgb(58, 0, 77);
+    }
+  </style>
+  <!-- End of Scrollbar settings -->
+  <!-- Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/277b7a838c.js" crossorigin="anonymous"></script>
+  <!-- Mangazine-CSS -->
+  <link rel="stylesheet" href="_main.css">
+
+  <title>Mangazine</title>
+</head>
+
+<body>
+
+  <!-- NavBar -->
+  <nav>
+    <div class="nav-wrapper Navbarsettings">
+      <a href="_main.html" class="brand-logo center">Mangazine<i class="fa-solid fa-book-open-reader right"></i></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="hide-on-med-and-down">
+        <div class="left">
+          <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a href="https://discord.com/"><i class="fa-brands fa-discord"></i></a></li>
+        </div>
+        <div class="right">
+          <li><a href="#LogIn" class="modal-trigger"><i class="fa-solid fa-right-to-bracket right"></i>Log-In</a></li>
+          <li><a href="#SignUp" class="modal-trigger"><i class="fa-solid fa-user-plus right"></i>Sign-Up</a></li>
+        </div>
+      </ul>
+    </div>
+  </nav>
+  <!-- End of NavBar -->
+  <!-- SideNav -->
+  <ul class="sidenav Navbarsettings " id="mobile-demo">
+    <li class="user">
+      <div class="user-view">
+        <div class="background">
+          <img src="">
+        </div>
+        <a href="#user"><img class="circle" src="User.png"></a>
+        <a href="#LogIn" class="modal-trigger"><span class="white-text name"><i
+              class="fa-solid fa-right-to-bracket right"></i>Log-In</span></a>
+        <a href="#SignUp" class="modal-trigger"><span class="white-text email"><i
+              class="fa-solid fa-user-plus right"></i>Sign-Up</span></a>
+      </div>
+    </li>
+    <div class="divider"></div>
+    <div>
+      <li><a href="_main.html" class="white-text center">Home</a></li>
+      <li><a href="_main.html#Recommended" class="white-text center">Recommended Manga</a></li>
+      <li><a href="_main.html#TopRated" class="white-text center">Top Rated Manga</a></li>
+      <li><a href="_main.html#Genre" class="white-text center">Genre</a></li>
+    </div>
+    <div class="divider"></div>
+    <div>
+      <li><a href="https://www.facebook.com/" class="white-text"><i
+            class="fa-brands fa-facebook white-text"></i>Facebook</a></li>
+      <li><a href="https://www.twitter.com/" class="white-text"><i
+            class="fa-brands fa-twitter white-text"></i>Twitter</a></li>
+      <li><a href="https://www.discord.com/" class="white-text"><i
+            class="fa-brands fa-discord white-text"></i>Discord</a></li>
+    </div>
+  </ul>
+  <!-- End of SideNav -->
+  <br><br><br>
+  <!-- Main -->
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m12 l9 white-text">
+        <div class="section">
+          <div id="RAAS" class="row">
+            <div class="col s4">
+              <div class="card">
+                <div class="card-image">
+                  <img src="https://cdn.myanimelist.net/images/anime/1498/121952.jpg">
+                </div>
+              </div>
+            </div>
+            <div class="col s8 Font">
+              <h4>Reincarnated as a Sword
+              </h4>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima assumenda sed ipsam necessitatibus laborum
+                saepe voluptatem tempore, alias a ratione optio, voluptatibus quia quos! Quidem doloribus vitae perferendis
+                corporis! Fugit. </p>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima assumenda sed ipsam necessitatibus laborum
+                saepe voluptatem tempore, alias a ratione optio, voluptatibus quia quos! Quidem doloribus vitae perferendis
+                corporis! Fugit. </p>
+
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="row">
+            <div class="col s12 Tabs-Background">
+              <ul class="tabs Tabs-Background">
+                <li class="tab col s4"><a href="#Volume1" class="white-text">Volume 1</a></li>
+                <li class="tab col s4"><a href="#Volume2" class="white-text">Volume 2</a></li>
+                <li class="tab col s4"><a href="#Volume3" class="white-text">Volume 3</a></li>
+
+              </ul>
+            </div>
+            <div id="Volume1" class="col s12 Tabs-Content-Background">
+              <div class="row">
+                <div class="col s4">
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="https://www.midtowncomics.com/images/PRODUCT/XL/1877501_xl.jpg">
+                    </div>
+                    </div>
+                </div>
+                <div class="col s8">
+                  <table class="highlight centered">
+                    <thead>
+                      <tr>
+                          <th>Chapter</th>
+                          <th>Scanned by:</th>
+                      </tr>
+                    </thead>
+            
+                    <tbody>
+                      <tr>
+                        <td><a href="">Chapter 1</a></td>
+                        <td>Moe Panda Scans</td>
+                      </tr>
+                      <tr>
+                        <td><a href="">Chapter 2</a></td>
+                        <td>Moe Panda Scans</td>
+                      </tr>
+                      <tr>
+                        <td><a href="">Chapter 3</a></td>
+                        <td>Moe Panda Scans</td>
+                      </tr>
+                      <tr>
+                        <td><a href="">Chapter 4</a></td>
+                        <td>Moe Panda Scans</td>
+                      </tr>
+                      <tr>
+                        <td><a href="">Chapter 5</a></td>
+                        <td>Moe Panda Scans</td>
+                      </tr>
+                      <tr>
+                        <td><a href="">Chapter 6</a></td>
+                        <td>Moe Panda Scans</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div id="Volume2" class="col s12 Tabs-Content-Background">
+              <div class="row">
+                <div class="col s4">
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="https://th.bing.com/th/id/OIP.ZamKWhI_aAltnnB1dt3lOgHaKj?pid=ImgDet&rs=1">
+                    </div>
+                    </div>
+                </div>
+                <div class="col s8">
+                  <table class="highlight centered">
+                    <thead>
+                      <tr>
+                          <th>Chapter</th>
+                          <th>Scanned by:</th>
+                      </tr>
+                    </thead>
+            
+                    <tbody>
+                      <tr>
+                        <td><a href="">Chapter 7</a></td>
+                        <td>Moe Panda Scans</td>
+                      </tr>
+                      <tr>
+                        <td><a href="">Chapter 8</a></td>
+                        <td>Moe Panda Scans</td>
+                      </tr>
+                      <tr>
+                        <td><a href="">Chapter 9</a></td>
+                        <td>Moe Panda Scans</td>
+                      </tr>
+                      <tr>
+                        <td><a href="">Chapter 10</a></td>
+                        <td>Moe Panda Scans</td>
+                      </tr>
+                    <tr>
+                      <td><a href="">Chapter 11</a></td>
+                      <td>Moe Panda Scans</td>
+                    </tr>
+                    <tr>
+                      <td>---</td>
+                      <td>---</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div id="Volume3" class="col s12 Tabs-Content-Background">
+              <div class="row">
+                <div class="col s4">
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1592453538l/54148369._SX318_.jpg">
+                    </div>
+                    </div>
+                </div>
+                <div class="col s8">
+                  <table class="highlight centered">
+                    <thead>
+                      <tr>
+                          <th>Chapter</th>
+                          <th>Scanned by:</th>
+                      </tr>
+                    </thead>
+            
+                    <tbody>
+                      <tr>
+                        <td><a href="">Chapter 12</a></td>
+                        <td>Moe Panda Scans</td>
+                      </tr>
+                      <tr>
+                        <td><a href="">Chapter 13</a></td>
+                        <td>Moe Panda Scans</td>
+                      </tr>
+                      <tr>
+                        <td><a href="">Chapter 14</a></td>
+                        <td>Moe Panda Scans</td>
+                      </tr>
+                      <tr>
+                        <td><a href="">Chapter 15</a></td>
+                        <td>Moe Panda Scans</td>
+                      </tr>
+                      <tr>
+                        <td><a href="">Chapter 16</a></td>
+                        <td>Moe Panda Scans</td>
+                      </tr>
+                      <tr>
+                        <td>---</td>
+                        <td>---</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Table of contents -->
+      <div class="col hide-on-med-and-down l3">
+        <div class="toc-wrapper pin-top Font" style="top: 0px;">
+          <br><br>
+          <!-- Genre -->
+          <div class="row">
+            <!-- Title: Recommended Manga -->
+            <div class="col s11 offset-s1 Title-Background white-text">
+              Genre
+            </div>
+            <div class="col s12">
+              <br>
+            </div>
+            <!-- End of Title -->
+            <div class="col s11 offset-s1 Content-Background">
+              <div class="container">
+                <ul class="row">
+                  <li><a href="" class="white-text">Action</a></li>
+                  <li><a href="" class="white-text">Adventure</a></li>
+                  <li><a href="" class="white-text">Comedy</a></li>
+                  <li><a href="" class="white-text">Drama</a></li>
+                  <li><a href="" class="white-text">Horror</a></li>
+                  <li><a href="" class="white-text">Mystery</a></li>
+                  <li><a href="" class="white-text">Romance</a></li>
+                  <li><a href="" class="white-text">Fantasy</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <ul class="section table-of-contents">
+            <li><a href="_main.html" class="white-text">Home</a></li>
+            <li><a href="_main.html#Recommended" class="white-text">Recommended </a></li>
+            <li><a href="_main.html#TopRated" class="white-text">Top Rated</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- Modals -->
+  <div id="LogIn" class="modal loginsignup">
+    <div class="modal-content white-text">
+      <h4 class="center">Log-In</h4>
+      <form>
+        <div class="row">
+          <div class="input-field col s10  offset-s1">
+            <input id="E-mail" type="email" class="validate white-text">
+            <label for="first_name" class="req">E-mail</label>
+          </div>
+          <div class="input-field col s10 offset-s1">
+            <input id="Password" type="password" class="validate white-text">
+            <label for="last_name" class="req">Password</label>
+          </div>
+          <div class="col offset-s3">
+            <a class="waves-effect waves-purple btn center Buttons">Log-in</a>
+          </div>
+          <div class="col">
+            <a href="#SignUp" class="waves-effect waves-purple btn center Buttons modal-trigger modal-close">Sign-up</a>
+          </div>
+          <div class="col offset-s3 section">
+            <p>or you can log in with:</p>
+          </div>
+          <div class="col offset-s3">
+            <a href="https://www.google.com/"><i class="fa-brands fa-google medium white-text"></i></a>
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook medium white-text"></i></a>
+            <a href="https://twitter.com/"><i class="fa-brands fa-twitter medium white-text"></i></a>
+          </div>
+        </div>
+      </form>
+
+    </div>
+  </div>
+  <div id="SignUp" class="modal loginsignup">
+    <div class="modal-content white-text">
+      <h4 class="center">Sign-Up</h4>
+      <div class="row">
+        <div class="input-field col s5 offset-s1">
+          <input id="first_name" type="text" class="validate white-text">
+          <label for="first_name" class="req">first name</label>
+        </div>
+        <div class="input-field col s5">
+          <input id="last_name" type="text" class="validate white-text">
+          <label for="last_name" class="req">last name</label>
+        </div>
+        <div class="input-field col s10  offset-s1">
+          <input id="E-mail" type="email" class="validate white-text">
+          <label for="first_name" class="req">E-mail</label>
+        </div>
+        <div class="input-field col s10  offset-s1">
+          <input id="Password" type="password" class="validate white-text">
+          <label for="first_name" class="req">Password</label>
+        </div>
+        <div class="input-field col s10  offset-s1">
+          <input id="Password" type="password" class="validate white-text">
+          <label for="first_name" class="req">Confirm Password</label>
+        </div>
+        <div class="col offset-s3">
+          <a href="#LogIn" class="waves-effect waves-purple btn center Buttons modal-trigger modal-close">Log-in</a>
+        </div>
+        <div class="col">
+          <a class="waves-effect waves-purple btn center Buttons">Sign-up</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Jquery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      //sidenav
+      $('.sidenav').sidenav({
+        edge: 'right'
+      });
+      //Sticky-nav
+      $('nav').addClass('sticky-nav');
+      //Modal
+      $('.modal').modal({
+        opacity: 0.8
+      });
+      //Carousel
+      $('.carousel').carousel({
+        fullWidth: true,
+        indicators: true
+      });
+      //Scrollspy
+      $('.scrollspy').scrollSpy();
+      //Tabs
+      $('.tabs').tabs({
+
+      });
+    });
+
+  </script>
+  <script src="_main.js"></script>
+</body>
+
+</html>
